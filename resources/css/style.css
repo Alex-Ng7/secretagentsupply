@@ -74,6 +74,7 @@ nav ul{
   display: flex;
   padding: .75rem 0 .75rem 0;
   justify-content: space-between;
+  list-style: none;
 }
 
 .container .products{
@@ -146,7 +147,7 @@ footer span{
   display: none;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 784px){
   .pen, .watch{
     width: 47%;
   }
@@ -163,20 +164,30 @@ footer span{
 
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (min-width:320px) and (max-width:425px){
+  header span{
+      font-size: .9rem;
+  }
+
+  header img{
+    padding-right: .5rem;
+  }
+
   .title-box{
     width: 100%;
   }
   .container .title-box{
-    padding: 1.5rem 3rem;
+    padding: 1rem 0rem 0.1rem 0rem;
     top: 9rem;
   }
   .container .title-box h4{
     font-size: .77rem;
     margin: 0;
+    text-align: center;
   }
   .container .title-box h2{
     font-size: 1rem;
+    text-align: center;
   }
   .banner{
     height: 15rem;
